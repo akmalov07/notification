@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.success-message {
+    width: 300px;
+    position: fixed;
+    right: -100%;
+    top: 20px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #4E8D7C;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    color: white;
+    transition: 0.4s;
+    padding: 0 20px;
+}
+
+.warning-message {
+    width: 300px;
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #F4A261;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    color: white;
+    transition: 0.4s;
+    padding: 0 20px;
+}
+
+.error-message {
+    width: 500px;
+    position: fixed;
+    right: -100%;
+    top: 200px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #E76F51;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    color: white;
+    transition: 0.4s;
+    padding: 0 20px;
+}
+
+.error-message h1 {
+    margin-bottom: 5px;
+}
+
+.btn {
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#success {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    background: linear-gradient(135deg, #4E8D7C 0%, #2A5D4A 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#success:hover {
+    transform: scale(1.05);
+}
+
+#warning {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    background: linear-gradient(135deg, #F4A261 0%, #D17A3F 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#warning:hover {
+    transform: scale(1.05);
+}
+
+#error {
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    background: linear-gradient(135deg, #E76F51 0%, #C14E3A 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#error:hover {
+    transform: scale(1.05);
+}
+
+.active {
+    right: 20px;
+    transition: 0.4s;
+}
